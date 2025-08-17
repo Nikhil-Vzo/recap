@@ -285,4 +285,13 @@ letter-spacing: 1.4rem;
   .links p {
     color: white;
   }
+    
+ .footer
+  {
+    background-image: url(./nik\ \(1\).jpg);
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-position: center;
+  }
+    
 }
