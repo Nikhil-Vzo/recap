@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Federant&family=Playwrite+MX+Guides&display=swap');
+
+
+
+body
+{
+    background:rgb(250,250,250);
+    background-image: linear-gradient(to top, #c27a66 0%, #ffd1ff 100%);
+    min-height: 100vh;
+    background-size: 300% 300%;
+    animation: backgroundAnimation 2s infinite;
+    
+}
+
+@keyframes backgroundAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.header h3
+{
+    text-align: center;
+    font-size: 1.25rem;
+    font-family: 'Playwrite MX Guides', sans-serif;
+    padding-top: 2rem;
+    color: rgb(234, 24, 185);
+}
+
+
+.hero
+{
+    height: 40vh;
+    width: 100%;
+    position: relative;
+}
+
+
+
+.chip
+{   
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 19px;
+    font-family: 'Federant', sans-serif;
+    transition: all 1s ease;
+    border: solid 2px white;
+    border-radius: 24px;
+    padding: 1% 1%;
+    border-style:dashed;
+    margin-bottom: 5%;
+}
+
+.tiles
+{
+    margin-top: 5rem;
+  text-align: center;
+}
+
+.ok
+{
+    margin-left: 40px;
+    border: solid 2px black;
+    border-radius: 24px;
+    padding: 1% 1%;
+    flex-wrap: wrap;
+    font-family: 'Playwrite MX Guides', sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+    .ok {
+        margin-left: 20px;
+        display: inline-block;
+        margin: 5px;
+        font-family: 'Playwrite MX Guides', sans-serif;
+    }
+}
+
+ .card-wrapper {
+  
+  margin-top: 10vh;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
+  gap: 2vw;             
+}
+
+.card {
+  flex: 0 0 25vw;          
+  background: rgba(189, 115, 172, 0.011);
+  border: solid 2px white;
+  border-radius: 24px;
+  padding: 2vh 1vw;
+  font-family: 'Playwrite MX Guides', sans-serif;
+  text-align: center;
+  height: 40vh;
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .card {
+    flex-basis:90vw;
+  }
+
+  .last
+  {
+display: none;
+  }
+}
+
+
+.animation
+{
+  margin-top: 5em;
+  display: flex;
+  justify-content: space-around;  
+  font-family: 'Federant', sans-serif;
+  font-size: 2rem;
+  border: solid 2px wheat;
+}
+
+.bounce
+{
+  transition: bounce 1s ease-in-out;
+ animation: bounce 2s infinite;
+}
+
+
+
+
+@keyframes bounce
+{
+ 0%
+ {
+  transform: translateY(0px);
+ }
+
+ 50%
+ {
+  transform: translateY(10px);
+ }
+
+
+ 100%
+ {
+  transform: translateY(0px);
+ }
+
+}
+
+
+.fade
+{
+  transition: 2s ease-in;
+  animation: fade 2s infinite;
+}
+
+@keyframes fade {
+  0%, 100% 
+  {
+     opacity: 1;
+     }
+
+  50%     
+   { 
+    opacity: 0;
+   }
+}
+
+.rotating
+{
+transition: 2s ease;
+animation: rotate 2s infinite;
+}
+
+@keyframes rotate
+{
+  0%,100%
+  {
+    transform: rotate(0deg);
+  }
+
+  50%
+  {
+    transform: rotate(360deg);
+  }
+
+}
+
+.sliding {
+  animation: slide 4s linear infinite;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+@keyframes slide {
+  from { transform: translateX(100%); }
+  to   { transform: translateX(-100%); } 
+}
+
+@media (max-width:768px)
+{
+  .animation
+  {
+    flex-direction: column;
+    gap: 2rem;
+    border: none;
+    margin-top: 2rem;
+  }
+
+  
+}
+
+.footer
+{
+  margin-top: 1rem;
+  background-image: url(./nik\ \(1\).jpg);
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-position: right;
+ 
+}
+
+.links p
+{
+ font-size: 4.4rem;
+ margin-top: 2rem;
+ border-top: 1px solid #000;
+}
+
+.links:hover p
+{
+  border-top: 4px solid wheat;
+  transition: all 0.5s ease;
+  letter-spacing: 1rem;
+  font-family: cursive;
+  
+}
+
+@media (max-width: 768px) {
+  .links p {
+    font-size: 2.3rem;
+    margin-top: 2rem;
+  }
+
+  .links:hover p {
+    letter-spacing: 0.5rem;
+  }
+}
+
+.hard 
+{
+  font-size: 4rem;
+ text-align: center;
+letter-spacing: 1.4rem;
+ font-family: 'Federant', sans-serif;
+ background-color:  black;
+ color: wheat;
+ border-top: solid 4px wheat;
+ border-bottom: solid 4px wheat;
+}
+
+  
+
+@media (max-width: 768px) {
+  .hard {
+    font-size: 2.5rem;
+    letter-spacing: 0.5rem;
+    padding: 1rem;
+  }
+
+  .links p {
+    color: white;
+  }
+}
